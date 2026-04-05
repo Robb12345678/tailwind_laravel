@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return 'First progress';
 });
+use App\Http\Controllers\PostController;
+
+Route::get('/posts', [PostController::class, 'index']);

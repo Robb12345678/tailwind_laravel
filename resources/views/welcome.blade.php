@@ -16,8 +16,15 @@
         Lara and Tailwind works.
     </p>
 
-    <a href="/test" class="mt-6 px-4 py-2 bg-blue-500 rounded hover:bg-blue-600">
-        Go to Test Route
+    <div style="margin-top: 20px;">
+        <a href="/test" style="margin-right: 10px; padding: 10px 15px; background: #3b82f6; color: white; text-decoration: none; border-radius: 5px;">
+            Go to Test Route
+        </a>
+
+        <a href="/posts" style="padding: 10px 15px; background: #10b981; color: white; text-decoration: none; border-radius: 5px;">
+            Go to Posts
+        </a>
+        </div>
     </a>
 
 </body>

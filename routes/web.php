@@ -10,4 +10,8 @@ Route::get('/test', function () {
 });
 use App\Http\Controllers\PostController;
 
-Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+
+Route::post('/posts', [PostController::class, 'store']);
+
+Route::delete('/posts/{id}', [PostController::class, 'destroy']);

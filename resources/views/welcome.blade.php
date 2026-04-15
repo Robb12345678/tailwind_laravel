@@ -1,31 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Progress</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center">
+@extends('layouts.app')
 
-    <h1 class="text-5xl font-bold text-blue-400 mb-4">
-        Tailwindssss
-    </h1>
+@section('content')
 
-    <p class="text-lg text-gray-300">
-        Lara and Tailwind works.
-    </p>
+<div class="min-h-screen flex items-center justify-center">
 
-    <div style="margin-top: 20px;">
-        <a href="/test" style="margin-right: 10px; padding: 10px 15px; background: #3b82f6; color: white; text-decoration: none; border-radius: 5px;">
-            Go to Test Route
-        </a>
+    <div class="text-center">
 
-        <a href="/posts" style="padding: 10px 15px; background: #10b981; color: white; text-decoration: none; border-radius: 5px;">
+        <h1 class="text-5xl md:text-6xl font-bold tracking-wider mb-10">
+            NOTES BOARD
+        </h1>
+
+        <a href="/posts"
+            class="inline-block bg-green-500 px-6 py-2 rounded-md text-white font-semibold hover:bg-green-600 transition">
             Go to Posts
         </a>
-        </div>
-    </a>
 
-</body>
-</html>
+    </div>
+
+</div>
+
+@endsection
